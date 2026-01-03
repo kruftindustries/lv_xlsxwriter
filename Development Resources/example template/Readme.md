@@ -35,12 +35,12 @@ libxlsxwriter-x.x.x/
 
 **Prerequisites (not included - obtain separately):**
 - Visual Studio VSLayout directory
-- 2015myRIO Software Bundle ISO (for LabVIEW)
+- LabVIEW Software Bundle ISO (for LabVIEW)
 
 **Setup:**
 1. Place the prerequisites in `sandbox/shared/`:
    - `VSLayout/` directory
-   - `2015myRIO Software Bundle 1.iso`
+   - `LabVIEW Software Bundle 1.iso`
 
 2. Double-click `sandbox/install_dev_environment.wsb`
 

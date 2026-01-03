@@ -25,7 +25,7 @@ PREREQUISITES:
 SETUP INSTRUCTIONS:
 -------------------
   1. Copy your LabVIEW installation ISO to:
-     C:\Users\Nick\Desktop\xlsxwriter-dev\sandbox\shared\LabVIEW.iso
+     %HOMEDRIVE%%HOMEPATH%\Desktop\xlsxwriter-dev\sandbox\shared\LabVIEW.iso
 
   2. (Optional) Edit labview_config.ini to customize LabVIEW installation options
 
@@ -55,7 +55,7 @@ This is safe within the sandbox as all changes are discarded when closed.
 
 BUILDING LIBXLSXWRITER:
 -----------------------
-After installation completes, run the build script:
+After installation completes, run the build script (from the sandbox environment):
   C:\Users\WDAGUtilityAccount\Desktop\Setup\build.bat
 
 This script will:
@@ -122,7 +122,7 @@ Two options for Jenkins builds:
 2. Freestyle Job (jenkins_build.bat):
    - Create a new Freestyle job
    - Add "Execute Windows batch command" build step:
-       call C:\path\to\sandbox\jenkins_build.bat
+       call %HOMEDRIVE%%HOMEPATH%\Desktop\xlsxwriter-dev\sandbox\jenkins_build.bat
    - Add "Archive the artifacts" post-build action:
        sandbox/shared/output/*.zip
 
