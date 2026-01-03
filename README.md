@@ -30,6 +30,38 @@ A LabVIEW wrapper for [libxlsxwriter](https://libxlsxwriter.github.io/), a C lib
 
 See `Development Resources/README.txt` for instructions on building xlsxwriter.dll using Windows Sandbox with Visual Studio.
 
+### Prerequisites
+
+You must provide your own LabVIEW installation ISO and specfile:
+
+**Creating the LabVIEW Specfile:**
+
+1. Mount your LabVIEW installer ISO
+2. Open a command prompt and run:
+   ```
+   D:\setup.exe /generatespecfile "C:\path\to\specfile\directory\"
+   ```
+   (Replace `D:\` with your mounted ISO drive letter)
+3. The installer GUI will open - select the required packages for your installation
+4. Enter your user details and serial number when prompted
+5. Complete the wizard - the installer will display the location of the created specfile
+6. Copy the generated specfile folder to `Development Resources/shared/specfile_lv/`
+
+**Adding the LabVIEW ISO:**
+
+1. Obtain your LabVIEW installation ISO from NI (requires valid license)
+2. Copy the ISO to `Development Resources/shared/LabVIEW.iso`
+
+**Running the Build:**
+
+1. Run `Development Resources/shared/download_vs_layout.bat` to download Visual Studio offline installer
+2. Double-click `Development Resources/install_dev_environment.wsb` to launch Windows Sandbox
+3. Wait for Visual Studio and LabVIEW installation to complete (20-40 minutes)
+4. Run `C:\Users\WDAGUtilityAccount\Desktop\Setup\build.bat`
+5. Output DLLs will be in:
+   - 32-bit: `Setup\libxlsxwriter-1.2.3\build32\Release\xlsxwriter.dll`
+   - 64-bit: `Setup\libxlsxwriter-1.2.3\build64\Release\xlsxwriter.dll`
+
 ## Examples
 
 The `Examples` folder contains VIs demonstrating:
