@@ -205,7 +205,7 @@ echo.
 echo [Step 6/6] Packaging output files...
 echo.
 
-set OUTPUT_DIR=%SETUP_DIR%\output
+set OUTPUT_DIR=%DESKTOP%\Output
 set PKG_DIR=%OUTPUT_DIR%\pkg
 if not exist "%OUTPUT_DIR%" mkdir "%OUTPUT_DIR%"
 

@@ -3,3 +3,18 @@
 
 # Compiled DLLs
 *.dll
+
+# Windows Sandbox
+*.wsb
+*.iso
+VSLayout/
+VS Sandbox Output/
+vs_community.exe
+
+# NI Installer
+nisuite.xml
+specfile_lv/
+
+# Logs
+install_all.txt
+install_log.txt
